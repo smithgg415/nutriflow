@@ -5,7 +5,7 @@ const products = [
         precoAvista: 'R$ 56,50',
         precoCartao: 'R$ 60,50',
         category: 'Pastas de amendoim',
-        flavors: ["Buenissimo", "Chocotine"],
+        flavors: ["Buenissimo", "Creme de Avelã", "Chocotine"],
         marca: 'DR Penaut',
     },
     {
@@ -190,7 +190,6 @@ function updateCartDisplay() {
 
         cartItems.appendChild(li);
 
-        // Converte o preço para número e soma ao total
         total += parseFloat(itemPrice.replace('R$', '').replace('.', '').replace(',', '.'));
     });
 
@@ -215,9 +214,8 @@ function showSuccessMessage(productName) {
     }, 4000);
 }
 
-// Escuta mudanças no método de pagamento
 document.getElementById('paymentMethod').addEventListener('change', function () {
-    updateCartDisplay();  // Recalcula o total ao trocar o método de pagamento
+    updateCartDisplay();
 });
 
 document.getElementById('sendToWhatsApp').addEventListener('click', function () {
