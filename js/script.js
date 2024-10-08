@@ -1,6 +1,6 @@
 const products = [
     {
-        name: 'Pasta de amendoim 600g \n Dr. Peanut',
+        name: 'Pasta de amendoim 600g Dr. Peanut',
         image: 'suplementos/drpeanut.png',
         precoAvista: 'R$ 56,50',
         precoCartao: 'R$ 60,50',
@@ -18,7 +18,7 @@ const products = [
         marca: 'Integralmédica',
     },
     {
-        name: "Pré-Treino \n Diabo Verde Insano 300G Ftw",
+        name: "Pré-Treino Diabo Verde Insano 300G Ftw",
         image: 'suplementos/diaboverde.png',
         precoAvista: 'R$ 109,90',
         precoCartao: 'R$ 115,00',
@@ -54,7 +54,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        name: "Horus Pré Treino 150g Max Titanium",
+        name: "Pré-Treino Horus 150g Max Titanium",
         image: 'suplementos/horus.png',
         precoAvista: 'R$ 87,00',
         precoCartao: 'R$ 94,00',
@@ -63,7 +63,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        name: "Nuclear Rush 100g \n Pré-Treino",
+        name: " Pré-Treino Nuclear Rush 100g",
         image: 'suplementos/nuclear.png',
         precoAvista: 'R$ 55,00',
         precoCartao: 'R$ 60,00',
@@ -81,7 +81,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        name: "Termogênico Therma \n Pro Hardcore 60 Cápsulas",
+        name: "Termogênico Therma Pro Hardcore 60 Cápsulas",
         image: 'suplementos/therma.png',
         precoAvista: 'R$ 50,00',
         precoCartao: 'R$ 55,00',

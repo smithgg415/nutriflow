@@ -468,6 +468,7 @@ body {
 }
 
 .product-card {
+    text-align: center;
     background-color: rgba(255, 204, 0, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -479,6 +480,7 @@ body {
     padding-bottom: 15px;
     display: flex;
     flex-direction: column;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     align-items: center;
 }
 
