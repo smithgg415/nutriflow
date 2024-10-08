@@ -81,7 +81,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        name: "Termogênico Pro Hardcore 60 Cápsulas",
+        name: "Termogênico Therma<br> Pro Hardcore 60 Cápsulas",
         image: 'suplementos/therma.png',
         precoAvista: 'R$ 50,00',
         precoCartao: 'R$ 55,00',
