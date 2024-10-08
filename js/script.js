@@ -63,7 +63,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        name: "Nuclear Rush 100g Pré-Treino",
+        name: "Nuclear Rush 100g<br>Pré-Treino",
         image: 'suplementos/nuclear.png',
         precoAvista: 'R$ 55,00',
         precoCartao: 'R$ 60,00',
