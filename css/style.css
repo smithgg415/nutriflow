@@ -125,7 +125,7 @@ body {
     outline: none;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
 }
-/* Estilos do pop-up */
+
 .popup-container {
     display: flex;
     justify-content: center;
@@ -135,47 +135,45 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* fundo transparente preto */
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
-    backdrop-filter: blur(5px); /* desfocar o fundo */
+    backdrop-filter: blur(5px);
 }
 
 .popup-content {
-    background: linear-gradient(145deg, #1d1d1d, #2b2b2b); /* gradiente escuro */
+    background: linear-gradient(145deg, #1d1d1d, #2b2b2b);
     border-radius: 20px;
     padding: 30px;
     text-align: center;
     width: 90%;
     max-width: 500px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    color: #ffa500; /* Alinhado ao padrão amarelo */
+    color: #ffa500;
     font-family: 'Arial', sans-serif;
     position: relative;
-    overflow: hidden; /* Para esconder conteúdo que extrapola */
+    overflow: hidden;
 }
 
-/* Animação de entrada */
 .popup-content {
     animation: slideIn 0.5s ease;
 }
 
-/* Animação de slide-in */
 @keyframes slideIn {
     from {
         transform: translateY(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-/* Botão para fechar */
 .close-btn {
-    color: #ffa500; /* Botão de fechar amarelo */
+    color: #ffa500;
     float: right;
-    font-size: 30px; /* Aumentar o tamanho do botão */
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
     padding: 5px;
@@ -183,18 +181,16 @@ body {
 }
 
 .close-btn:hover {
-    color: #ff4500; /* Alteração de cor ao passar o mouse */
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    color: #ff4500;
+    transform: scale(1.1);
 }
 
-/* Estilo do texto no pop-up */
 .popup-content p {
     margin: 20px 0;
-    font-size: 18px; /* Aumentar o tamanho da fonte */
-    line-height: 1.5; /* Melhorar a legibilidade */
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-/* Adicionando um efeito de borda */
 .popup-content::before {
     content: "";
     position: absolute;
@@ -202,10 +198,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 165, 0, 0.2); /* Sombra suave amarela */
+    background: rgba(255, 165, 0, 0.2);
     border-radius: 20px;
-    z-index: -1; /* Coloca a borda atrás do conteúdo */
-    filter: blur(10px); /* Desfocar a borda */
+    z-index: -1;
+    filter: blur(10px);
 }
 
 
@@ -310,7 +306,6 @@ body {
     margin: 5px;
     text-decoration: none;
     color: #ffcc00;
-    /* Texto amarelo */
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 25px;
@@ -480,7 +475,7 @@ body {
     padding-bottom: 15px;
     display: flex;
     flex-direction: column;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-items: center;
 }
 
