@@ -675,13 +675,6 @@ body {
     font-weight: bold;
 }
 
-.total-price {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #b8860b;
-}
-
 .remove-btn {
     background-color: red;
     color: white;
@@ -800,7 +793,7 @@ body {
     background-color: #f8f9fa;
 }
 
-.total-price {
+.total-price, .desconto-price {
     font-size: 20px;
     color: #28a745;
     margin-top: 15px;

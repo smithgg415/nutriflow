@@ -166,15 +166,23 @@ function addToCart(product, productIndex) {
 function updateCartDisplay() {
     const cartItems = document.getElementById('cartItems');
     const totalPrice = document.getElementById('totalPrice');
+    const discountPrice = document.getElementById('discountPrice'); 
     const paymentMethod = document.getElementById('paymentMethod').value;
 
     cartItems.innerHTML = '';
     let total = 0;
+    let totalCartao = 0;
+    let totalAvista = 0;
 
     cart.forEach((item, index) => {
         const flavorText = item.selectedFlavor ? ` (Sabor: ${item.selectedFlavor})` : '';
 
         const itemPrice = paymentMethod === 'Cartão' ? item.precoCartao : item.precoAvista;
+        const itemAvista = parseFloat(item.precoAvista.replace('R$', '').replace('.', '').replace(',', '.'));
+        const itemCartao = parseFloat(item.precoCartao.replace('R$', '').replace('.', '').replace(',', '.'));
+
+        totalCartao += itemCartao;
+        totalAvista += itemAvista;
 
         const li = document.createElement('li');
         li.className = 'cart-item';
@@ -194,8 +202,18 @@ function updateCartDisplay() {
     });
 
     totalPrice.textContent = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+
+    if (paymentMethod === 'PIX' || paymentMethod === 'Boleto' || paymentMethod === 'Dinheiro') {
+        const discount = totalCartao - totalAvista;
+        discountPrice.textContent = `Desconto: R$ ${discount.toFixed(2).replace('.', ',')}`;
+        discountPrice.style.display = 'block'; 
+    } else {
+        discountPrice.style.display = 'none'; 
+    }
+
     document.getElementById('cart').style.display = cart.length > 0 ? 'block' : 'none';
 }
+
 
 function removeFromCart(index) {
     cart.splice(index, 1);
