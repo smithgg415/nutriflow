@@ -172,6 +172,7 @@ body {
     color: #fff;
     background-color: red;
     padding:5px;
+    width: 10px;
     border-radius:15px;
     cursor: pointer;
 }
