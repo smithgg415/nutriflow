@@ -205,7 +205,7 @@ function updateCartDisplay() {
 
     if (paymentMethod === 'PIX' || paymentMethod === 'Boleto' || paymentMethod === 'Dinheiro') {
         const discount = totalCartao - totalAvista;
-        discountPrice.textContent = `Desconto: R$ ${discount.toFixed(2).replace('.', ',')}`;
+        discountPrice.textContent = `Desconto no ${paymentMethod}: R$ ${discount.toFixed(2).replace('.', ',')}`;
         discountPrice.style.display = 'block'; 
     } else {
         discountPrice.style.display = 'none'; 
