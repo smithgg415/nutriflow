@@ -333,6 +333,9 @@ function handleScroll() {
         window.removeEventListener('scroll', handleScroll);
     }
 }
+document.getElementById('floating-button').addEventListener('click', function() {
+    document.getElementById('cart').scrollIntoView({ behavior: 'smooth' });
+});
 
 
 
