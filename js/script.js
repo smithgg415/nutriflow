@@ -93,6 +93,8 @@ const products = [
 window.addEventListener('scroll', handleScroll);
 window.onload = function () {
     document.getElementById('popup').style.display = 'flex';
+    renderCatalog(products);
+    updateFloatingButtonVisibility();
 };
 
 function closePopup() {
@@ -160,7 +162,7 @@ function addToCart(product, productIndex) {
 
     cart.push(selectedProduct);
     updateCartDisplay();
-    updateFloatingButtonVisibility();
+    updateFloatingButtonVisibility(); // Atualiza a visibilidade do botão flutuante
     showSuccessMessage(product.name);
 }
 
@@ -219,7 +221,7 @@ function updateCartDisplay() {
 function removeFromCart(index) {
     cart.splice(index, 1);
     updateCartDisplay();
-    updateFloatingButtonVisibility();
+    updateFloatingButtonVisibility(); 
 }
 
 function showSuccessMessage(productName) {
@@ -233,10 +235,11 @@ function showSuccessMessage(productName) {
         successMessage.style.display = 'none';
     }, 4000);
 }
-function updateFloatingButtonVisibility(){
-    const button = document.getElementById("floating-button");
+function updateFloatingButtonVisibility() {
+    const button = document.getElementById('floating-button');
     const isCartEmpty = cart.length === 0;
-    button.classList.toggle("hidden-button", isCartEmpty);
+    button.classList.toggle('hidden-button', isCartEmpty);
+    console.log(`Botão flutuante ${isCartEmpty ? 'oculto' : 'visível'}`); // Para depuração
 }
 
 document.getElementById('paymentMethod').addEventListener('change', function () {
