@@ -170,10 +170,10 @@ body {
     right: 15px;
     font-size: 24px;
     color: white;
-    background-color:red;
-    padding:5px;
+    background-color: red;
+    padding: 5px;
     width: 45px;
-    border-radius:15px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -196,6 +196,33 @@ body {
     line-height: 1.5;
 }
 
+#floating-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s linear;
+}
+
+#floating-button:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    color: #ffcc00;
+}
+
+.hidden-button {
+    visibility: hidden;
+}
 
 
 .buscar {
