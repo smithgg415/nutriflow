@@ -160,6 +160,7 @@ function addToCart(product, productIndex) {
 
     cart.push(selectedProduct);
     updateCartDisplay();
+    updateFloatingButtonVisibility();
     showSuccessMessage(product.name);
 }
 
@@ -218,6 +219,7 @@ function updateCartDisplay() {
 function removeFromCart(index) {
     cart.splice(index, 1);
     updateCartDisplay();
+    updateFloatingButtonVisibility();
 }
 
 function showSuccessMessage(productName) {
@@ -230,6 +232,11 @@ function showSuccessMessage(productName) {
     setTimeout(() => {
         successMessage.style.display = 'none';
     }, 4000);
+}
+function updateFloatingButtonVisibility(){
+    const button = document.getElementById("floating-button");
+    const isCartEmpty = cart.length === 0;
+    button.classList.toggle("hidden-button", isCartEmpty);
 }
 
 document.getElementById('paymentMethod').addEventListener('change', function () {
