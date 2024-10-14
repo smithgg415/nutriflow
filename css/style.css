@@ -214,6 +214,7 @@ body {
 }
 
 #floating-button:hover {
+    transition: 0.5s linear;
     transform: scale(1.1);
     background-color: #000;
     color: #ffcc00;
