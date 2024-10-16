@@ -191,7 +191,7 @@ const products = [
     {
         id:18,
         name: "Whey 100% REFIL<br>MaxTitanium",
-        image: "suplementos/wheymaxrefil.png",
+        image: "suplementos/wheymaxrefilbaunilha.png",
         precoAvista: "R$ 135,00",
         precoCartao: "R$ 142,00",
         category: "Whey Protein",
