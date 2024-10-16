@@ -227,16 +227,16 @@ function renderCatalog(products) {
         <select id="flavorSelect-${index}" class='selectSabor'>
             ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
         </select>`}
-        else {
-                    flavorSelectHTML = `
+            else {
+                flavorSelectHTML = `
         <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
         <br>
         <select id="flavorSelect-${index}" class='selectSabor'>
             ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
         </select>
     `;
-                }
             }
+        }
 
 
         card.innerHTML = `
@@ -291,12 +291,7 @@ function updateCartDisplay() {
     let totalAvista = 0;
 
     cart.forEach((item, index) => {
-        if(products.category === "Coqueteleiras"){
         const flavorText = item.selectedFlavor ? ` (Sabor: ${item.selectedFlavor})` : '';
-    }
-    else{
-            const flavorText = item.selectedFlavor ? ` (Cor: ${item.selectedFlavor})` : '';
-        }
         const itemPrice = paymentMethod === 'Cartão' ? item.precoCartao : item.precoAvista;
         const itemAvista = parseFloat(item.precoAvista.replace('R$', '').replace('.', '').replace(',', '.'));
         const itemCartao = parseFloat(item.precoCartao.replace('R$', '').replace('.', '').replace(',', '.'));
