@@ -180,12 +180,12 @@ const products = [
         precoAvista: "R$20,00",
         precoCartao: "R$23,00",
         category: "Coqueteleiras",
-        flavors: ["Branco Pérola", "Vermelha", "Azul Tiffany"],
+        flavors: ["Vermelha", "Branco Pérola", "Azul Tiffany"],
         marca: "Venom Labs"
     },
     {
         name: "Coqueteleira New Millen",
-        image: "suplementos/coqueteleiranewmillen.png",
+        image: "suplementos/coqueteleiras/coqueteleiranewmillen.png",
         precoAvista: "R$ 20,00",
         precoCartao: "R$ 23,00",
         category: "Coqueteleiras",
