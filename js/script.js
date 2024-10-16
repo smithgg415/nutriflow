@@ -23,23 +23,16 @@ const products = [
         precoAvista: 'R$ 56,50',
         precoCartao: 'R$ 60,50',
         category: 'Pastas de amendoim',
-        flavors: [
-            { name: "Buenissimo", image: 'suplementos/drpeanut/buenissimo.png' },
-            { name: "Creme de Avelã", image: 'suplementos/drpeanut/avela.png' },
-            { name: "Chocotine", image: 'suplementos/drpeanut/chocotine.png' }
-        ],
-        marca: 'DR Peanut',
+        flavors: ["Buenissimo", "Creme de Avelã", "Chocotine"],
+        marca: 'DR Penaut',
     },
     {
         name: "Pasta de amendoim 250g Dr. Peanut",
-        image: "suplementos/drpeanut250.png",
+        image: "suplementos/drpeanut/cookies250.png",
         precoAvista: "R$ 29,90",
         precoCartao: "R$ 31,90",
         category: "Pastas de amendoim",
-        flavors: [
-            { name: "Cookies And Cream", image: 'suplementos/drpeanut/cookies250.png' },
-            { name: "Bueníssimo", image: 'suplementos/drpeanut/buenissimo250.png' }
-        ],
+        flavors: ["Cookies And Cream", "Bueníssimo"],
         marca: "DR Peanut",
     },
     {
@@ -48,9 +41,7 @@ const products = [
         precoAvista: 'R$ 109,90',
         precoCartao: 'R$ 115,00',
         category: 'Pré-treinos',
-        flavors: [
-            { name: "Maçã-Verde", image: 'suplementos/diaboverde.png' }
-        ],
+        flavors: ["Maçã-Verde"],
         marca: 'FTW',
     },
     {
@@ -59,9 +50,7 @@ const products = [
         precoAvista: 'R$ 145,00',
         precoCartao: 'R$ 152,00',
         category: 'Whey Protein',
-        flavors: [
-            { name: "Cookies", image: 'suplementos/wheymaxpote.png' }
-        ],
+        flavors: ["Cookies"],
         marca: 'Max Titanium',
     },
     {
@@ -70,10 +59,7 @@ const products = [
         precoAvista: 'R$ 130,00',
         precoCartao: 'R$ 136,00',
         category: 'Whey Protein',
-        flavors: [
-            { name: "Cookies And Cream", image: 'suplementos/wheyintegral.png' },
-            { name: "Chocolate Maltado", image: 'suplementos/wheyintegral.png' }
-        ],
+        flavors: ["Cookies And Cream", "Chocolate Maltado"],
         marca: "Integralmédica",
     },
     {
@@ -109,9 +95,7 @@ const products = [
         precoAvista: 'R$ 87,00',
         precoCartao: 'R$ 94,00',
         category: 'Pré-treinos',
-        flavors: [
-            { name: "Maçã-Verde", image: 'suplementos/horus.png' }
-        ],
+        flavors: ["Maçã-Verde"],
         marca: 'Max Titanium',
     },
     {
@@ -120,9 +104,7 @@ const products = [
         precoAvista: 'R$ 55,00',
         precoCartao: 'R$ 60,00',
         category: 'Pré-treinos',
-        flavors: [
-            { name: "Morango", image: 'suplementos/nuclear.png' }
-        ],
+        flavors: ["Morango"],
         marca: 'Body action',
     },
     {
@@ -131,9 +113,7 @@ const products = [
         precoAvista: 'R$ 117,00',
         precoCartao: 'R$ 123,00',
         category: 'Hipercalóricos',
-        flavors: [
-            { name: "Chocolate", image: 'suplementos/mass.png' }
-        ],
+        flavors: ["Chocolate"],
         marca: 'Max Titanium',
     },
     {
@@ -144,6 +124,7 @@ const products = [
         category: "Creatinas",
         flavors: null,
         marca: "Probiótica",
+
     },
     {
         name: "Creatina MaxTitanium 300g",
@@ -162,18 +143,17 @@ const products = [
         category: "Creatinas",
         flavors: null,
         marca: "Max Titanium",
+
     },
     {
         name: "Whey 100% POTE 900g<br>MaxTitanium and Dr Peanut",
-        image: "suplementos/wheydrpeanut.png",
+        image: "suplementos/wheydrpeanut/bombom.png",
         precoAvista: "R$ 150,00",
         precoCartao: "R$ 156,00",
         category: "Whey Protein",
-        flavors: [
-            { name: "Bombom Italiano", image: 'suplementos/wheydrpeanut/bombom.png' },
-            { name: "Bueníssimo", image: 'suplementos/wheydrpeanut/buenissimo.png' }
-        ],
+        flavors: ["Bombom Italiano", "Bueníssimo"],
         marca: "Max Titanium",
+
     },
     {
         name: "Whey 100% Pure Probiótica",
@@ -181,10 +161,9 @@ const products = [
         precoAvista: "R$ 120,00",
         precoCartao: "R$ 125,00",
         category: "Whey Protein",
-        flavors: [
-            { name: "Morango", image: 'suplementos/wheyprobiotica.png' }
-        ],
+        flavors: ["Morango"],
         marca: "Probiótica",
+
     },
     {
         name: "Whey 100% REFIL<br>MaxTitanium",
@@ -192,23 +171,16 @@ const products = [
         precoAvista: "R$ 135,00",
         precoCartao: "R$ 142,00",
         category: "Whey Protein",
-        flavors: [
-            { name: "Baunilha", image: 'suplementos/wheymaxrefil.png' },
-            { name: "Chocolate", image: 'suplementos/wheymaxrefil.png' }
-        ],
+        flavors: ["Baunilha", "Chocolate"],
         marca: "Max Titanium",
     },
     {
         name: "Coqueteleira Venom Labs",
-        image: "suplementos/coqueteleiravenom.png",
+        image: "suplementos/coqueteleiras/vermelha.png",
         precoAvista: "R$20,00",
         precoCartao: "R$23,00",
         category: "Coqueteleiras",
-        flavors: [
-            { name: "Branco Pérola", image: 'suplementos/coqueteleira/branco.png' },
-            { name: "Vermelha", image: 'suplementos/coqueteleira/vermelha.png' },
-            { name: "Azul Tiffany", image: 'suplementos/coqueteleira/azul.png' }
-        ],
+        flavors: ["Branco Pérola", "Vermelha", "Azul Tiffany"],
         marca: "Venom Labs"
     },
     {
@@ -220,8 +192,8 @@ const products = [
         flavors: null,
         marca: "New Millen",
     },
-];
 
+];
 
 window.onload = function () {
     document.getElementById('popup').style.display = 'flex';
@@ -249,30 +221,31 @@ function renderCatalog(products) {
 
         let flavorSelectHTML = '';
         if (product.flavors) {
-            if (product.category === "Coqueteleiras") {
-                flavorSelectHTML = `
-                    <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha a cor:</label>
-                    <br>
-                    <select id="flavorSelect-${index}" class='selectSabor'>
-                        ${product.flavors.map(flavor => `<option value="${flavor.name}">${flavor.name}</option>`).join('')}
-                    </select>`;
-            } else {
-                flavorSelectHTML = `
-                    <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
-                    <br>
-                    <select id="flavorSelect-${index}" class='selectSabor'>
-                        ${product.flavors.map(flavor => `<option value="${flavor.name}">${flavor.name}</option>`).join('')}
-                    </select>`;
+            if (product.category == "Coqueteleiras") {
+                flavorSelectHTML = `<label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
+        <br>
+        <select id="flavorSelect-${index}" class='selectSabor'>
+            ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
+        </select>`}
+        else {
+                    flavorSelectHTML = `
+        <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
+        <br>
+        <select id="flavorSelect-${index}" class='selectSabor'>
+            ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
+        </select>
+    `;
+                }
             }
-        }
+
 
         card.innerHTML = `
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <div class="product-info">
-                <div class="product-name">${product.name}</div>
-                <div class="avista">à vista por:</div>
-                <div class="product-price">${product.precoAvista}</div>
-                ${flavorSelectHTML}
+            <div class="product-name">${product.name}</div>
+            <div class="avista">à vista por:</div>
+            <div class="product-price">${product.precoAvista}</div>
+               ${flavorSelectHTML}
             </div>
         `;
 
@@ -288,7 +261,6 @@ function renderCatalog(products) {
         catalog.appendChild(card);
     });
 }
-
 
 function addToCart(product, productIndex) {
     const selectedProduct = { ...product };
@@ -319,12 +291,8 @@ function updateCartDisplay() {
     let totalAvista = 0;
 
     cart.forEach((item, index) => {
-        if (products.category == "Coqueteleiras") {
-            const flavorText = item.selectedFlavor ? ` (Cor: ${item.selectedFlavor})` : '';
-        }
-        else{
-            const flavorText = item.selectedFlavor ? ` (Sabor: ${item.selectedFlavor})` : '';
-        }
+        const flavorText = item.selectedFlavor ? ` (Sabor: ${item.selectedFlavor})` : '';
+
         const itemPrice = paymentMethod === 'Cartão' ? item.precoCartao : item.precoAvista;
         const itemAvista = parseFloat(item.precoAvista.replace('R$', '').replace('.', '').replace(',', '.'));
         const itemCartao = parseFloat(item.precoCartao.replace('R$', '').replace('.', '').replace(',', '.'));
