@@ -7,6 +7,7 @@ const products = [
         precoCartao: 'R$ 115,00',
         category: 'Creatinas',
         flavors: null,
+        images: null,
         marca: 'Integralmédica',
     },
     {
@@ -17,6 +18,7 @@ const products = [
         precoCartao: 'R$ 72,00',
         category: 'Creatinas',
         flavors: null,
+        images: null,
         marca: 'Integralmédica',
     },
     {
@@ -49,6 +51,7 @@ const products = [
         precoCartao: 'R$ 115,00',
         category: 'Pré-treinos',
         flavors: ["Maçã-Verde"],
+        images: null,
         marca: 'FTW',
     },
     {
@@ -59,6 +62,7 @@ const products = [
         precoCartao: 'R$ 152,00',
         category: 'Whey Protein',
         flavors: ["Cookies"],
+        images: null,
         marca: 'Max Titanium',
     },
     {
@@ -80,6 +84,7 @@ const products = [
         precoCartao: 'R$ 55,00',
         category: 'Termogênicos',
         flavors: null,
+        images: null,
         marca: 'Max Titanium',
     },
     {
@@ -90,6 +95,7 @@ const products = [
         precoCartao: "R$ 40,00",
         category: "Pré-treinos",
         flavors: null,
+        images: null,
         marca: "Max Titanium"
     },
     {
@@ -100,6 +106,7 @@ const products = [
         precoCartao: 'R$ 60,00',
         category: 'Multivitamínicos',
         flavors: null,
+        images: null,
         marca: 'Max Titanium',
     },
     {
@@ -110,6 +117,7 @@ const products = [
         precoCartao: 'R$ 94,00',
         category: 'Pré-treinos',
         flavors: ["Maçã-Verde"],
+        images: null,
         marca: 'Max Titanium',
     },
     {
@@ -120,6 +128,7 @@ const products = [
         precoCartao: 'R$ 60,00',
         category: 'Pré-treinos',
         flavors: ["Morango"],
+        images: null,
         marca: 'Body action',
     },
     {
@@ -130,6 +139,7 @@ const products = [
         precoCartao: 'R$ 123,00',
         category: 'Hipercalóricos',
         flavors: ["Chocolate"],
+        images: null,
         marca: 'Max Titanium',
     },
     {
@@ -140,6 +150,7 @@ const products = [
         precoCartao: "99,90",
         category: "Creatinas",
         flavors: null,
+        images: null,
         marca: "Probiótica",
 
     },
@@ -151,6 +162,7 @@ const products = [
         precoCartao: "R$ 115,00",
         category: "Creatinas",
         flavors: null,
+        images: null,
         marca: "Max Titanium",
     },
     {
@@ -161,6 +173,7 @@ const products = [
         precoCartao: "R$ 115,00",
         category: "Creatinas",
         flavors: null,
+        images: null,
         marca: "Max Titanium",
 
     },
@@ -184,7 +197,7 @@ const products = [
         precoCartao: "R$ 125,00",
         category: "Whey Protein",
         flavors: ["Morango"],
-        images: ["suplementos/wheyprobiotica"],
+        images: null,
         marca: "Probiótica",
 
     },
@@ -218,6 +231,7 @@ const products = [
         precoCartao: "R$ 23,00",
         category: "Coqueteleiras",
         flavors: null,
+        images: null,
         marca: "New Millen",
     },
 ];
