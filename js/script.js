@@ -445,17 +445,17 @@ document.getElementById('floating-button').addEventListener('click', function ()
     document.getElementById('cart').scrollIntoView({ behavior: 'smooth' });
 });
 
-const wrapper = document.querySelector('.carousel-wrapper');
-const texts = document.querySelectorAll('.carousel-text');
-let currentIndex = 0;
+// const wrapper = document.querySelector('.carousel-wrapper');
+// const texts = document.querySelectorAll('.carousel-text');
+// let currentIndex = 0;
 
-function showNextText() {
-    currentIndex = (currentIndex + 1) % texts.length;
+// function showNextText() {
+//     currentIndex = (currentIndex + 1) % texts.length;
 
-    wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+//     wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+// }
 
-setInterval(showNextText, 3000);
+// setInterval(showNextText, 3000);
 
 
 
