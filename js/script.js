@@ -1,14 +1,5 @@
 const products = [
     {
-        name: 'Pasta de amendoim 600g Dr. Peanut',
-        image: 'suplementos/drpeanut.png',
-        precoAvista: 'R$ 56,50',
-        precoCartao: 'R$ 60,50',
-        category: 'Pastas de amendoim',
-        flavors: ["Buenissimo", "Creme de Avelã", "Chocotine"],
-        marca: 'DR Penaut',
-    },
-    {
         name: "Creatina Hardcore 300g Integralmédica",
         image: 'suplementos/creatinaintegral.png',
         precoAvista: 'R$ 110,00',
@@ -18,12 +9,48 @@ const products = [
         marca: 'Integralmédica',
     },
     {
+        name: "Creatina Hardcore 150g Integralmédica",
+        image: 'suplementos/creatinaintegral150.png',
+        precoAvista: 'R$ 67,00',
+        precoCartao: 'R$ 72,00',
+        category: 'Creatinas',
+        flavors: null,
+        marca: 'Integralmédica',
+    },
+    {
+        name: 'Pasta de amendoim 600g Dr. Peanut',
+        image: 'suplementos/drpeanut.png',
+        precoAvista: 'R$ 56,50',
+        precoCartao: 'R$ 60,50',
+        category: 'Pastas de amendoim',
+        flavors: [
+            { name: "Buenissimo", image: 'suplementos/drpeanut/buenissimo.png' },
+            { name: "Creme de Avelã", image: 'suplementos/drpeanut/avela.png' },
+            { name: "Chocotine", image: 'suplementos/drpeanut/chocotine.png' }
+        ],
+        marca: 'DR Peanut',
+    },
+    {
+        name: "Pasta de amendoim 250g Dr. Peanut",
+        image: "suplementos/drpeanut250.png",
+        precoAvista: "R$ 29,90",
+        precoCartao: "R$ 31,90",
+        category: "Pastas de amendoim",
+        flavors: [
+            { name: "Cookies And Cream", image: 'suplementos/drpeanut/cookies250.png' },
+            { name: "Bueníssimo", image: 'suplementos/drpeanut/buenissimo250.png' }
+        ],
+        marca: "DR Peanut",
+    },
+    {
         name: "Pré-Treino Diabo Verde Insano 300G Ftw",
         image: 'suplementos/diaboverde.png',
         precoAvista: 'R$ 109,90',
         precoCartao: 'R$ 115,00',
         category: 'Pré-treinos',
-        flavors: ["Maçã-Verde"],
+        flavors: [
+            { name: "Maçã-Verde", image: 'suplementos/diaboverde.png' }
+        ],
         marca: 'FTW',
     },
     {
@@ -32,7 +59,9 @@ const products = [
         precoAvista: 'R$ 145,00',
         precoCartao: 'R$ 152,00',
         category: 'Whey Protein',
-        flavors: ["Cookies"],
+        flavors: [
+            { name: "Cookies", image: 'suplementos/wheymaxpote.png' }
+        ],
         marca: 'Max Titanium',
     },
     {
@@ -41,8 +70,29 @@ const products = [
         precoAvista: 'R$ 130,00',
         precoCartao: 'R$ 136,00',
         category: 'Whey Protein',
-        flavors: ["Chocolate Maltado"],
+        flavors: [
+            { name: "Cookies And Cream", image: 'suplementos/wheyintegral.png' },
+            { name: "Chocolate Maltado", image: 'suplementos/wheyintegral.png' }
+        ],
         marca: "Integralmédica",
+    },
+    {
+        name: "Termogênico Therma Pro Hardcore 60 Cápsulas",
+        image: 'suplementos/therma.png',
+        precoAvista: 'R$ 50,00',
+        precoCartao: 'R$ 55,00',
+        category: 'Termogênicos',
+        flavors: null,
+        marca: 'Max Titanium',
+    },
+    {
+        name: "Cafeína FireBlack 60 Cápsulas",
+        image: "suplementos/cafeinafire.png",
+        precoAvista: "R$ 37,00",
+        precoCartao: "R$ 40,00",
+        category: "Pré-treinos",
+        flavors: null,
+        marca: "Max Titanium"
     },
     {
         name: "Multivitamínico MultiMax Complex 90 Cápsulas",
@@ -59,7 +109,9 @@ const products = [
         precoAvista: 'R$ 87,00',
         precoCartao: 'R$ 94,00',
         category: 'Pré-treinos',
-        flavors: ["Maçã-Verde"],
+        flavors: [
+            { name: "Maçã-Verde", image: 'suplementos/horus.png' }
+        ],
         marca: 'Max Titanium',
     },
     {
@@ -68,7 +120,9 @@ const products = [
         precoAvista: 'R$ 55,00',
         precoCartao: 'R$ 60,00',
         category: 'Pré-treinos',
-        flavors: ["Morango"],
+        flavors: [
+            { name: "Morango", image: 'suplementos/nuclear.png' }
+        ],
         marca: 'Body action',
     },
     {
@@ -77,19 +131,97 @@ const products = [
         precoAvista: 'R$ 117,00',
         precoCartao: 'R$ 123,00',
         category: 'Hipercalóricos',
-        flavors: ["Chocolate"],
+        flavors: [
+            { name: "Chocolate", image: 'suplementos/mass.png' }
+        ],
         marca: 'Max Titanium',
     },
     {
-        name: "Termogênico Therma Pro Hardcore 60 Cápsulas",
-        image: 'suplementos/therma.png',
-        precoAvista: 'R$ 50,00',
-        precoCartao: 'R$ 55,00',
-        category: 'Termogênicos',
+        name: "Creatina Probiótica 300g",
+        image: "suplementos/creatinaprobiotica.png",
+        precoAvista: "R$ 95,00",
+        precoCartao: "99,90",
+        category: "Creatinas",
         flavors: null,
-        marca: 'Max Titanium',
-    }
+        marca: "Probiótica",
+    },
+    {
+        name: "Creatina MaxTitanium 300g",
+        image: "suplementos/creatinamax300.png",
+        precoAvista: "R$ 110,00",
+        precoCartao: "R$ 115,00",
+        category: "Creatinas",
+        flavors: null,
+        marca: "Max Titanium",
+    },
+    {
+        name: "Creatina MaxTitanium 150g",
+        image: "suplementos/creatinamax150.png",
+        precoAvista: "R$ 67,00",
+        precoCartao: "R$ 115,00",
+        category: "Creatinas",
+        flavors: null,
+        marca: "Max Titanium",
+    },
+    {
+        name: "Whey 100% POTE 900g<br>MaxTitanium and Dr Peanut",
+        image: "suplementos/wheydrpeanut.png",
+        precoAvista: "R$ 150,00",
+        precoCartao: "R$ 156,00",
+        category: "Whey Protein",
+        flavors: [
+            { name: "Bombom Italiano", image: 'suplementos/wheydrpeanut/bombom.png' },
+            { name: "Bueníssimo", image: 'suplementos/wheydrpeanut/buenissimo.png' }
+        ],
+        marca: "Max Titanium",
+    },
+    {
+        name: "Whey 100% Pure Probiótica",
+        image: "suplementos/wheyprobiotica.png",
+        precoAvista: "R$ 120,00",
+        precoCartao: "R$ 125,00",
+        category: "Whey Protein",
+        flavors: [
+            { name: "Morango", image: 'suplementos/wheyprobiotica.png' }
+        ],
+        marca: "Probiótica",
+    },
+    {
+        name: "Whey 100% REFIL<br>MaxTitanium",
+        image: "suplementos/wheymaxrefil.png",
+        precoAvista: "R$ 135,00",
+        precoCartao: "R$ 142,00",
+        category: "Whey Protein",
+        flavors: [
+            { name: "Baunilha", image: 'suplementos/wheymaxrefil.png' },
+            { name: "Chocolate", image: 'suplementos/wheymaxrefil.png' }
+        ],
+        marca: "Max Titanium",
+    },
+    {
+        name: "Coqueteleira Venom Labs",
+        image: "suplementos/coqueteleiravenom.png",
+        precoAvista: "R$20,00",
+        precoCartao: "R$23,00",
+        category: "Coqueteleiras",
+        flavors: [
+            { name: "Branco Pérola", image: 'suplementos/coqueteleira/branco.png' },
+            { name: "Vermelha", image: 'suplementos/coqueteleira/vermelha.png' },
+            { name: "Azul Tiffany", image: 'suplementos/coqueteleira/azul.png' }
+        ],
+        marca: "Venom Labs"
+    },
+    {
+        name: "Coqueteleira New Millen",
+        image: "suplementos/coqueteleiranewmillen.png",
+        precoAvista: "R$ 20,00",
+        precoCartao: "R$ 23,00",
+        category: "Coqueteleiras",
+        flavors: null,
+        marca: "New Millen",
+    },
 ];
+
 
 window.onload = function () {
     document.getElementById('popup').style.display = 'flex';
@@ -117,22 +249,30 @@ function renderCatalog(products) {
 
         let flavorSelectHTML = '';
         if (product.flavors) {
-            flavorSelectHTML = `
-        <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
-        <br>
-        <select id="flavorSelect-${index}" class='selectSabor'>
-            ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
-        </select>
-    `;
+            if (product.category === "Coqueteleiras") {
+                flavorSelectHTML = `
+                    <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha a cor:</label>
+                    <br>
+                    <select id="flavorSelect-${index}" class='selectSabor'>
+                        ${product.flavors.map(flavor => `<option value="${flavor.name}">${flavor.name}</option>`).join('')}
+                    </select>`;
+            } else {
+                flavorSelectHTML = `
+                    <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
+                    <br>
+                    <select id="flavorSelect-${index}" class='selectSabor'>
+                        ${product.flavors.map(flavor => `<option value="${flavor.name}">${flavor.name}</option>`).join('')}
+                    </select>`;
+            }
         }
 
         card.innerHTML = `
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <div class="product-info">
-            <div class="product-name">${product.name}</div>
-            <div class="avista">à vista por:</div>
-            <div class="product-price">${product.precoAvista}</div>
-               ${flavorSelectHTML}
+                <div class="product-name">${product.name}</div>
+                <div class="avista">à vista por:</div>
+                <div class="product-price">${product.precoAvista}</div>
+                ${flavorSelectHTML}
             </div>
         `;
 
@@ -148,6 +288,7 @@ function renderCatalog(products) {
         catalog.appendChild(card);
     });
 }
+
 
 function addToCart(product, productIndex) {
     const selectedProduct = { ...product };
@@ -178,8 +319,12 @@ function updateCartDisplay() {
     let totalAvista = 0;
 
     cart.forEach((item, index) => {
-        const flavorText = item.selectedFlavor ? ` (Sabor: ${item.selectedFlavor})` : '';
-
+        if (products.category == "Coqueteleiras") {
+            const flavorText = item.selectedFlavor ? ` (Cor: ${item.selectedFlavor})` : '';
+        }
+        else{
+            const flavorText = item.selectedFlavor ? ` (Sabor: ${item.selectedFlavor})` : '';
+        }
         const itemPrice = paymentMethod === 'Cartão' ? item.precoCartao : item.precoAvista;
         const itemAvista = parseFloat(item.precoAvista.replace('R$', '').replace('.', '').replace(',', '.'));
         const itemCartao = parseFloat(item.precoCartao.replace('R$', '').replace('.', '').replace(',', '.'));
