@@ -1,5 +1,6 @@
 const products = [
     {
+        id: 1,
         name: "Creatina Hardcore 300g Integralmédica",
         image: 'suplementos/creatinaintegral.png',
         precoAvista: 'R$ 110,00',
@@ -9,6 +10,7 @@ const products = [
         marca: 'Integralmédica',
     },
     {
+        id: 2,
         name: "Creatina Hardcore 150g Integralmédica",
         image: 'suplementos/creatinaintegral150.png',
         precoAvista: 'R$ 67,00',
@@ -18,24 +20,29 @@ const products = [
         marca: 'Integralmédica',
     },
     {
+        id: 3,
         name: 'Pasta de amendoim 600g Dr. Peanut',
         image: 'suplementos/drpeanut.png',
         precoAvista: 'R$ 56,50',
         precoCartao: 'R$ 60,50',
         category: 'Pastas de amendoim',
         flavors: ["Buenissimo", "Creme de Avelã", "Chocotine"],
+        images: ["suplementos/drpeanut/buenissimo.png", "suplementos/drpeanut/avela.png", "suplementos/drpeanut/chocotine.png"],
         marca: 'DR Penaut',
     },
     {
+        id: 4,
         name: "Pasta de amendoim 250g Dr. Peanut",
         image: "suplementos/drpeanut/cookies250.png",
         precoAvista: "R$ 29,90",
         precoCartao: "R$ 31,90",
         category: "Pastas de amendoim",
         flavors: ["Cookies And Cream", "Bueníssimo"],
+        images:["suplementos/drpeanut/cookies250.png", "suplementos/drpeanut/buenissimo250.png"],
         marca: "DR Peanut",
     },
     {
+        id: 4,
         name: "Pré-Treino Diabo Verde Insano 300G Ftw",
         image: 'suplementos/diaboverde.png',
         precoAvista: 'R$ 109,90',
@@ -45,6 +52,7 @@ const products = [
         marca: 'FTW',
     },
     {
+        id: 5,
         name: "100% Whey Protein 900g Max Titanium",
         image: 'suplementos/wheymaxpote.png',
         precoAvista: 'R$ 145,00',
@@ -60,6 +68,7 @@ const products = [
         precoCartao: 'R$ 136,00',
         category: 'Whey Protein',
         flavors: ["Cookies And Cream", "Chocolate Maltado"],
+        images: ["suplementos/wheyintegral", "suplementos/wheyintegral"],
         marca: "Integralmédica",
     },
     {
@@ -152,6 +161,7 @@ const products = [
         precoCartao: "R$ 156,00",
         category: "Whey Protein",
         flavors: ["Bombom Italiano", "Bueníssimo"],
+        images: ["suplementos/wheydrpeanut/bombom.png", "suplementos/wheydrpeanut/buenissimo.png"],
         marca: "Max Titanium",
 
     },
@@ -162,6 +172,7 @@ const products = [
         precoCartao: "R$ 125,00",
         category: "Whey Protein",
         flavors: ["Morango"],
+        images: ["suplementos/wheyprobiotica"],
         marca: "Probiótica",
 
     },
@@ -172,6 +183,7 @@ const products = [
         precoCartao: "R$ 142,00",
         category: "Whey Protein",
         flavors: ["Baunilha", "Chocolate"],
+        images: ["suplementos/wheymaxrefilbaunilha.png", "suplementos/wheymaxrefil.png"],
         marca: "Max Titanium",
     },
     {
@@ -181,6 +193,7 @@ const products = [
         precoCartao: "R$23,00",
         category: "Coqueteleiras",
         flavors: ["Vermelha", "Branco Pérola", "Azul Tiffany"],
+        images:['suplementos/coqueteleiras/vermelha.png', 'suplementos/coqueteleiras/branco.png', 'suplementos/coqueteleiras/azul.png'],
         marca: "Venom Labs"
     },
     {
@@ -202,6 +215,14 @@ window.onload = function () {
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
+
+function onChangeSelect(element) {
+    const index = element.split("-")[1];
+    var image = document.getElementById(`image-${index}`);
+    var select = document.getElementById(`flavorSelect-${index}`);
+    image.src=products[parseInt(index,10)].images[select.selectedIndex];
+}
+
 let cart = [];
 
 function renderCatalog(products) {
@@ -221,24 +242,24 @@ function renderCatalog(products) {
         if (product.flavors) {
             if (product.category == "Coqueteleiras") {
                 flavorSelectHTML = `<label for="flavorSelect-${index}" class='escolhaSabor'>Escolha a cor:</label>
-        <br>
-        <select id="flavorSelect-${index}" class='selectSabor'>
-            ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
-        </select>`}
-            else {
+                                    <br>
+                                    <select id="flavorSelect-${index}" class='selectSabor' onChange="onChangeSelect('flavorSelect-${index}')">
+                                        ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
+                                    </select>
+            ` } else {
                 flavorSelectHTML = `
-        <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
-        <br>
-        <select id="flavorSelect-${index}" class='selectSabor'>
-            ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
-        </select>
-    `;
+                            <label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
+                            <br>
+                            <select id="flavorSelect-${index}" class='selectSabor' onChange="onChangeSelect('flavorSelect-${index}')">
+                                ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
+                            </select>
+                `;
             }
         }
 
 
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" class="product-image">
+            <img src="${product.image}" alt="${product.name}" class="product-image" id="image-${index}">
             <div class="product-info">
             <div class="product-name">${product.name}</div>
             <div class="avista">à vista por:</div>
@@ -287,20 +308,20 @@ function updateCartDisplay() {
     let total = 0;
     let totalCartao = 0;
     let totalAvista = 0;
+    category: "Coqueteleiras",
+        cart.forEach((item, index) => {
+            const flavorText = item.selectedFlavor ? ` (${item.category == 'Coqueteleiras' ? 'Cor: ' : 'Sabor: '}: ${item.selectedFlavor})` : '';
+            const itemPrice = paymentMethod === 'Cartão' ? item.precoCartao : item.precoAvista;
+            const itemAvista = parseFloat(item.precoAvista.replace('R$', '').replace('.', '').replace(',', '.'));
+            const itemCartao = parseFloat(item.precoCartao.replace('R$', '').replace('.', '').replace(',', '.'));
 
-    cart.forEach((item, index) => {
-        const flavorText = item.selectedFlavor ? ` (Sabor: ${item.selectedFlavor})` : '';
-        const itemPrice = paymentMethod === 'Cartão' ? item.precoCartao : item.precoAvista;
-        const itemAvista = parseFloat(item.precoAvista.replace('R$', '').replace('.', '').replace(',', '.'));
-        const itemCartao = parseFloat(item.precoCartao.replace('R$', '').replace('.', '').replace(',', '.'));
+            totalCartao += itemCartao;
+            totalAvista += itemAvista;
 
-        totalCartao += itemCartao;
-        totalAvista += itemAvista;
+            const li = document.createElement('li');
+            li.className = 'cart-item';
 
-        const li = document.createElement('li');
-        li.className = 'cart-item';
-
-        li.innerHTML = `
+            li.innerHTML = `
             <img src="${item.image}" alt="${item.name}" class='imagemCart'>
             <div class="cart-item-details">
                 <div class="cart-item-name">${item.name}${flavorText}</div>
@@ -309,10 +330,10 @@ function updateCartDisplay() {
             <button class="remove-btn" onclick="removeFromCart(${index})"><i class="bi bi-trash" style='font-size:25px'></i></button>
         `;
 
-        cartItems.appendChild(li);
+            cartItems.appendChild(li);
 
-        total += parseFloat(itemPrice.replace('R$', '').replace('.', '').replace(',', '.'));
-    });
+            total += parseFloat(itemPrice.replace('R$', '').replace('.', '').replace(',', '.'));
+        });
 
     totalPrice.textContent = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
 
@@ -456,11 +477,3 @@ document.getElementById('floating-button').addEventListener('click', function ()
 // }
 
 // setInterval(showNextText, 3000);
-
-
-
-
-
-
-
-
