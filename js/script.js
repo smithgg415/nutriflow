@@ -68,7 +68,7 @@ const products = [
         precoCartao: 'R$ 136,00',
         category: 'Whey Protein',
         flavors: ["Cookies And Cream", "Chocolate Maltado"],
-        images: ["suplementos/wheyintegral", "suplementos/chocolatemaltado.png"],
+        images: ["suplementos/wheyintegral.png", "suplementos/chocolatemaltado.png"],
         marca: "Integralmédica",
     },
     {
