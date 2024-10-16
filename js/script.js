@@ -291,8 +291,12 @@ function updateCartDisplay() {
     let totalAvista = 0;
 
     cart.forEach((item, index) => {
+        if(products.category === "Coqueteleiras"){
         const flavorText = item.selectedFlavor ? ` (Sabor: ${item.selectedFlavor})` : '';
-
+    }
+    else{
+            const flavorText = item.selectedFlavor ? ` (Cor: ${item.selectedFlavor})` : '';
+        }
         const itemPrice = paymentMethod === 'Cartão' ? item.precoCartao : item.precoAvista;
         const itemAvista = parseFloat(item.precoAvista.replace('R$', '').replace('.', '').replace(',', '.'));
         const itemCartao = parseFloat(item.precoCartao.replace('R$', '').replace('.', '').replace(',', '.'));

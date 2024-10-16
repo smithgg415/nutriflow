@@ -383,7 +383,7 @@ body {
     }
 
     .carousel-item .d-block {
-        height: 200px;
+        height: 180px;
         object-fit: fill;
     }
 
