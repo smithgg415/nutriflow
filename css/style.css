@@ -383,7 +383,8 @@ body {
     }
 
     .carousel-item .d-block {
-        height: 180px;
+        height: 200px;
+        object-fit: fill;
     }
 
     .search-bar {
