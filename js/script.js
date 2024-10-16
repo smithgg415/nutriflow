@@ -192,9 +192,7 @@ const products = [
         flavors: null,
         marca: "New Millen",
     },
-
 ];
-
 window.onload = function () {
     document.getElementById('popup').style.display = 'flex';
     renderCatalog(products);
