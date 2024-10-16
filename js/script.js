@@ -28,7 +28,7 @@ const products = [
         category: 'Pastas de amendoim',
         flavors: ["Buenissimo", "Creme de Avelã", "Chocotine"],
         images: ["suplementos/drpeanut/buenissimo.png", "suplementos/drpeanut/avela.png", "suplementos/drpeanut/chocotine.png"],
-        marca: 'DR Penaut',
+        marca: 'DR Peanut',
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const products = [
         marca: "DR Peanut",
     },
     {
-        id: 4,
+        id: 5,
         name: "Pré-Treino Diabo Verde Insano 300G Ftw",
         image: 'suplementos/diaboverde.png',
         precoAvista: 'R$ 109,90',
@@ -52,7 +52,7 @@ const products = [
         marca: 'FTW',
     },
     {
-        id: 5,
+        id: 6,
         name: "100% Whey Protein 900g Max Titanium",
         image: 'suplementos/wheymaxpote.png',
         precoAvista: 'R$ 145,00',
@@ -62,7 +62,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        id:6,
+        id:7,
         name: "Whey 100% Integralmedica",
         image: 'suplementos/wheyintegral.png',
         precoAvista: 'R$ 130,00',
@@ -73,7 +73,7 @@ const products = [
         marca: "Integralmédica",
     },
     {
-        id:7,
+        id:8,
         name: "Termogênico Therma Pro Hardcore 60 Cápsulas",
         image: 'suplementos/therma.png',
         precoAvista: 'R$ 50,00',
@@ -83,7 +83,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        id:8,
+        id:9,
         name: "Cafeína FireBlack 60 Cápsulas",
         image: "suplementos/cafeinafire.png",
         precoAvista: "R$ 37,00",
@@ -93,7 +93,7 @@ const products = [
         marca: "Max Titanium"
     },
     {
-        id:9,
+        id:10,
         name: "Multivitamínico MultiMax Complex 90 Cápsulas",
         image: 'suplementos/multimax.png',
         precoAvista: 'R$ 57,00',
@@ -103,7 +103,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        id:10,
+        id:11,
         name: "Pré-Treino Horus 150g Max Titanium",
         image: 'suplementos/horus.png',
         precoAvista: 'R$ 87,00',
@@ -113,7 +113,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        id:11,
+        id:12,
         name: " Pré-Treino Nuclear Rush 100g",
         image: 'suplementos/nuclear.png',
         precoAvista: 'R$ 55,00',
@@ -123,7 +123,7 @@ const products = [
         marca: 'Body action',
     },
     {
-        id: 12,
+        id: 13,
         name: "Hipercalórico Mass 17500, 3kg Max Titanium",
         image: 'suplementos/mass.png',
         precoAvista: 'R$ 117,00',
@@ -133,7 +133,7 @@ const products = [
         marca: 'Max Titanium',
     },
     {
-        id: 13,
+        id: 14,
         name: "Creatina Probiótica 300g",
         image: "suplementos/creatinaprobiotica.png",
         precoAvista: "R$ 95,00",
@@ -144,7 +144,7 @@ const products = [
 
     },
     {
-        id: 14,
+        id: 15,
         name: "Creatina MaxTitanium 300g",
         image: "suplementos/creatinamax300.png",
         precoAvista: "R$ 110,00",
@@ -154,7 +154,7 @@ const products = [
         marca: "Max Titanium",
     },
     {
-        id:15,
+        id:16,
         name: "Creatina MaxTitanium 150g",
         image: "suplementos/creatinamax150.png",
         precoAvista: "R$ 67,00",
@@ -165,7 +165,7 @@ const products = [
 
     },
     {
-        id:16,
+        id:17,
         name: "Whey 100% POTE 900g<br>MaxTitanium and Dr Peanut",
         image: "suplementos/wheydrpeanut/bombom.png",
         precoAvista: "R$ 150,00",
@@ -177,7 +177,7 @@ const products = [
 
     },
     {
-        id: 17,
+        id: 18,
         name: "Whey 100% Pure Probiótica",
         image: "suplementos/wheyprobiotica.png",
         precoAvista: "R$ 120,00",
@@ -189,7 +189,7 @@ const products = [
 
     },
     {
-        id:18,
+        id:19,
         name: "Whey 100% REFIL<br>MaxTitanium",
         image: "suplementos/wheymaxrefilbaunilha.png",
         precoAvista: "R$ 135,00",
@@ -200,7 +200,7 @@ const products = [
         marca: "Max Titanium",
     },
     {
-        id:19,
+        id:20,
         name: "Coqueteleira Venom Labs",
         image: "suplementos/coqueteleiras/vermelha.png",
         precoAvista: "R$20,00",
@@ -211,7 +211,7 @@ const products = [
         marca: "Venom Labs"
     },
     {
-        id:20,
+        id:21,
         name: "Coqueteleira New Millen",
         image: "suplementos/coqueteleiras/coqueteleiranewmillen.png",
         precoAvista: "R$ 20,00",
