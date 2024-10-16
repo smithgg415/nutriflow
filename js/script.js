@@ -169,7 +169,7 @@ function addToCart(product, productIndex) {
 function updateCartDisplay() {
     const cartItems = document.getElementById('cartItems');
     const totalPrice = document.getElementById('totalPrice');
-    const discountPrice = document.getElementById('discountPrice'); 
+    const discountPrice = document.getElementById('discountPrice');
     const paymentMethod = document.getElementById('paymentMethod').value;
 
     cartItems.innerHTML = '';
@@ -209,9 +209,9 @@ function updateCartDisplay() {
     if (paymentMethod === 'PIX' || paymentMethod === 'Boleto' || paymentMethod === 'Dinheiro') {
         const discount = totalCartao - totalAvista;
         discountPrice.textContent = `Desconto no ${paymentMethod}: R$ ${discount.toFixed(2).replace('.', ',')}`;
-        discountPrice.style.display = 'block'; 
+        discountPrice.style.display = 'block';
     } else {
-        discountPrice.style.display = 'none'; 
+        discountPrice.style.display = 'none';
     }
 
     document.getElementById('cart').style.display = cart.length > 0 ? 'block' : 'none';
@@ -331,9 +331,21 @@ function handleScroll() {
 }
 window.addEventListener('scroll', handleScroll);
 
-document.getElementById('floating-button').addEventListener('click', function(){
-    document.getElementById('cart').scrollIntoView({behavior: 'smooth'});
+document.getElementById('floating-button').addEventListener('click', function () {
+    document.getElementById('cart').scrollIntoView({ behavior: 'smooth' });
 });
+
+const wrapper = document.querySelector('.carousel-wrapper');
+const texts = document.querySelectorAll('.carousel-text');
+let currentIndex = 0;
+
+function showNextText() {
+    currentIndex = (currentIndex + 1) % texts.length;
+
+    wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+setInterval(showNextText, 3000);
 
 
 
