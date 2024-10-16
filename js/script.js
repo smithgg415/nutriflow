@@ -222,7 +222,7 @@ function renderCatalog(products) {
         let flavorSelectHTML = '';
         if (product.flavors) {
             if (product.category == "Coqueteleiras") {
-                flavorSelectHTML = `<label for="flavorSelect-${index}" class='escolhaSabor'>Escolha o sabor:</label>
+                flavorSelectHTML = `<label for="flavorSelect-${index}" class='escolhaSabor'>Escolha a cor:</label>
         <br>
         <select id="flavorSelect-${index}" class='selectSabor'>
             ${product.flavors.map(flavor => `<option value="${flavor}">${flavor}</option>`).join('')}
