@@ -324,7 +324,7 @@ const products = [
     
     {
         id: 30,
-        name: "Galão Diabo Verde 1,5L FTW",
+        name: "Galão 1,5L FTW",
         image: "suplementos/coqueteleiras/galaoverde.png",
         precoAvista: "R$35,00",
         precoCartao: "R$40,00",
