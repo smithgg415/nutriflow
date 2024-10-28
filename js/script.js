@@ -352,7 +352,7 @@ const products = [
         precoCartao: "R$4,50",
         category: "Gel de Carboidrato",
         flavors: ["Guaraná com açaí", "Morango"],
-        images: ["suplementos/carbup.png", "suplementos/carbupmorango.png"],
+        images: ["suplementos/carbup.png", "suplementos/carbmorango.png"],
         marca: "Probiótica",
     },
     
